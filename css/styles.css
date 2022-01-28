@@ -7,11 +7,16 @@ section {
   padding: 100px 0;
 }
 
-header {
+.itd_logo_img {
+  width: 30px;
+  height: 30px;
+}
+
+.hero {
   padding: 200px 0;
 }
 
-header,
+.hero,
 footer {
   background: url(../img/pattern.png), var(--color1);
   background: url(../img/pattern.png),

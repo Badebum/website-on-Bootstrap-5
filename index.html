@@ -9,11 +9,55 @@
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/fontello.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>IT - курс</title>
   </head>
   <body>
     <header>
-      <div class="container">
+       <div class="container">
+           <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="#">
+      <img src="./img/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top itd_logo_img">
+      IT - курс
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Домашняя страница</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакты</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            О курсе
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">HTML</a></li>
+            <li><a class="dropdown-item" href="#">CSS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Свзятся с автором</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      <form class="d-flex">
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#singUpModal">
+  Регистрация
+</button>
+      </form>
+    </div>
+  </div>
+</nav>
+       </div>
+    </header>
+
+    <section class="hero" >
+          <div class="container">
         <div class="row">
           <div class="col-12">
             <h1 class="text-center text-white">
@@ -32,7 +76,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
     <section class="about">
       <div class="container">
@@ -1033,7 +1077,7 @@
       </div>
     </section>
 
-<section class="buy">
+    <section class="buy">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -1055,7 +1099,7 @@
         </div>
      </section>
 
-    <footer id="footer">
+    <footer >
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -1121,6 +1165,39 @@
         </div>
       </div>
     </div>
+
+<div class="modal fade" id="singUpModal" tabindex="-1" aria-labelledby="singUpModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+<div class="container">
+     <h5 class="modal-title text-center mt-2" id="singUpModal">
+              Форма регистрации
+            </h5>
+    <form class="p-3">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Почта</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Ваша почта в безопасности.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Сохранить пароль</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Зарегистрироватся</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+
+</form>
+</div>
+
+      
+    </div>
+  </div>
+</div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
